@@ -11,25 +11,12 @@
     <div class="container">
         <h1>Generate Joke</h1>
         <div class="categories">
-            <button class="category-btn" onclick="selectCategory('animal')">Animal</button>
-            <button class="category-btn" onclick="selectCategory('career')">Career</button>
-            <button class="category-btn" onclick="selectCategory('celebrity')">Celebrity</button>
-            <button class="category-btn" onclick="selectCategory('dev')">Dev</button>
-            <button class="category-btn" onclick="selectCategory('fashion')">Fashion</button>
-            <button class="category-btn" onclick="selectCategory('food')">Food</button>
-            <button class="category-btn" onclick="selectCategory('history')">History</button>
-            <button class="category-btn" onclick="selectCategory('money')">Money</button>
-
-            <button class="category-btn" onclick="selectCategory('movie')">Movie</button>
-            <button class="category-btn" onclick="selectCategory('political')">Political</button>
-            <button class="category-btn" onclick="selectCategory('religion')">Religion</button>
-            <button class="category-btn" onclick="selectCategory('science')">Science</button>
-
-            <button class="category-btn" onclick="selectCategory('sport')">Sport</button>
-            <button class="category-btn" onclick="selectCategory('travel')">Travel</button>
+            <select name="" id="category-select">
+                <option value="random"></option>
+            </select>
         </div>
 
-        <button id="generate-btn" onclick="generateJoke()">Generate Joke!</button>
+        <button id="joke-button" onclick="generateJoke()">Generate Joke!</button>
         <p id="joke-display"></p>
     </div>
 
